@@ -7,11 +7,11 @@ services:
      volumes:
          - ./php_code/php-e-commerce/:/var/www/html/
    php:
-     build: ./php_code/php-e-commerce/
+     build: .
      expose:
        - 9000
      volumes:
-        - ./php_code/php-e-commerce/:/var/www/html/
+        - .:/var/www/html/
    db:    
       image: mariadb  
       volumes: 
